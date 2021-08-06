@@ -11,9 +11,9 @@ export class AppComponent {
   header2 = 'Personal Website';
   year = 2021;
   navigationLinks = [
-    {title:'Home', route:'/elevator', name:'Home', id:'HomeLink'},
-    {title:'Resume', route:'/resume', name:'Resume', id:'ResumeLink'},
-    {title:'Portfolio', route:'/portfolio', name:'Portfolio', id:'PortfolioLink'}
+    {title:'Home', route:'/elevator', name:'Home', id:'1'},
+    {title:'Resume', route:'/resume', name:'Resume', id:'2'},
+    {title:'Portfolio', route:'/portfolio', name:'Portfolio', id:'3'}
   ];
   contactMethods = contactMethods;
 }

@@ -1,45 +1,26 @@
-<header role="main">
+<header role="main" class="p-2">
 
   <h1>{{header}}</h1>
   <h5>{{header2}}</h5>
 
 </header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      (click)="basicNavbar.toggle()"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
-    <div
-      class="collapse navbar-collapse"
-      id="navbarSupportedContent"
-    >
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item" *ngFor="let navigationLink of navigationLinks">
-          <a
-          [routerLink]="navigationLink.route" 
-          [id]="navigationLink.id">
-            {{navigationLink.name}}
+<nav>
+      <ul ngbNav class="nav-tabs">
+        <li  [ngbNavItem]="link.id" *ngFor="let link of navigationLinks">
+          <a [routerLink]="link.route" [id]="link.id">
+            {{link.name}}
           </a>
         </li>
       </ul>
-    </div>
-  </div>
 </nav>
 <router-outlet></router-outlet>
 
-<footer class="d-flex flex-row justify-content-between">
-  <div class="p-0">
+<footer class="d-flex flex-row justify-content-between flex-wrap">
+  <div class="p-2">
     <h4>LockeNewell.com</h4>
     &copy;{{year}} LockeNewell.com
   </div>
-  <div class="p-0">
+  <div class="p-2">
     <h4>About Me</h4>
     <ul>
       <li *ngFor="let navigationLink of navigationLinks">
@@ -49,7 +30,7 @@
       </li>
     </ul>
   </div>
-  <div class="p-0">
+  <div class="p-2">
     <h4>Contact Me</h4>
     <ul>
       <li *ngFor="let contactMethod of contactMethods">
