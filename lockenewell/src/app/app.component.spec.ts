@@ -38,10 +38,16 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('footer').textContent).toBeTruthy();
   });
-  it('should render Elevator Section', () => {
+  it('should render Portfolio link', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('#elevator').textContent).toBeTruthy();
+    expect(compiled.querySelector('#PortfolioLink').textContent).toBeTruthy();
+  });
+  it('should render Resume link', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('#ResumeLink').textContent).toBeTruthy();
   });
 });
