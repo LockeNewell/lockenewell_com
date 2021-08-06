@@ -20,16 +20,28 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'lockenewell'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('lockenewell');
-  });
-
-  it('should render title', () => {
+  it('should render header', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('lockenewell app is running!');
+    expect(compiled.querySelector('header h1').textContent).toBeTruthy();
+  });
+  it('should render nav', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('nav').textContent).toBeTruthy();
+  });
+  it('should render footer', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('footer').textContent).toBeTruthy();
+  });
+  it('should render Elevator Section', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('#elevator').textContent).toBeTruthy();
   });
 });
