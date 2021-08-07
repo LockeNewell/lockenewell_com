@@ -24,7 +24,7 @@
       <h6>{{item.name}}</h6>
       <div class='location'>{{item.location}}</div>
       <div class='title'>{{item.title}}</div>
-      <div class='dates'>{{item.dates.start}}-{{item.dates.end}}</div>
+      <div class='dates'>{{item.range}}</div>
       <ul>
         <li *ngFor="let comment of item.comments">{{comment}}</li>
       </ul>

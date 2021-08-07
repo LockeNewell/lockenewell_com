@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { contactMethods } from '../objects/contactMethods';
-import {experiences} from '../objects/experiences';
-import {education} from '../objects/education';
+import { contactMethods } from '../configs/contactMethods.config';
+import { jobExperience } from '../configs/jobExperience.config';
+import { educationExperience } from '../configs/educationExperience.config';
 
 @Component({
   selector: 'app-resume',
@@ -11,8 +11,8 @@ import {education} from '../objects/education';
 export class ResumeComponent implements OnInit {
 
   contactMethods = contactMethods;
-  experiences = experiences;
-  education = education;
+  experiences = jobExperience;
+  education = educationExperience;
   constructor() { }
 
   ngOnInit() {

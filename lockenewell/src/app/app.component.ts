@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {contactMethods} from './objects/contactMethods';
+import {contactMethods} from './configs/contactMethods.config';
+import { navigationLinks } from './configs/navigationLinks.config';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,17 @@ export class AppComponent {
   header = 'Locke Newell';
   header2 = 'Personal Website';
   year = 2021;
-  navigationLinks = [
-    {title:'Home', route:'/elevator', name:'Home', id:'1'},
-    {title:'Resume', route:'/resume', name:'Resume', id:'2'},
-    {title:'Portfolio', route:'/portfolio', name:'Portfolio', id:'3'}
-  ];
+  navigationLinks = navigationLinks
   contactMethods = contactMethods;
+
+  updateActiveLink(id: string) {
+    if(this.navigationLinks){
+      this.navigationLinks.forEach(item => item.active = false);
+      let newActiveLink = this.navigationLinks.find(item=>item.id===id);
+      if(newActiveLink){
+        newActiveLink.active=true;
+      }
+
+    }
+  }
 }

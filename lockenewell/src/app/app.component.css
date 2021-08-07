@@ -4,25 +4,44 @@ header h1 {
 header h5 {
     margin-block-start: 0em;
 }
-nav ul {
+.navbar div {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  width: 100%;
+
+  }
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    width: 100%;
   }
   
-nav li {
-    float: left;
-  }
+.navbar li {
+  float: left;
+}
   
-nav li a {
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: #555;
   }
+.selected {
+  background-color: #555;
+}
 section {
     margin-block-start: 1em;
 }

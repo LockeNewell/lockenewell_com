@@ -1,4 +1,6 @@
-let education = [
+import { EducationItem } from "../objects";
+
+export const educationExperience: EducationItem[] = [
     {
         name:'SUNY Fredonia', 
         location:'Fredonia, NY', 
@@ -24,4 +26,3 @@ let education = [
         range: '2010'
     },
 ];
-export {education}

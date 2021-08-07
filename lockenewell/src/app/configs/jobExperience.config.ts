@@ -1,12 +1,11 @@
-let experiences = [
+import { JobItem } from "../objects";
+
+export const jobExperience: JobItem[] = [
     {
         name:'Texas A&M University (EIS)', 
         location:'College Station, TX', 
         title:'Software Application Developer 2', 
-        dates: {
-            start:'2018',
-            end:'Present'
-        }, 
+        range:'2018 - Present', 
         comments:[
             `Write, update, maintain, test and rewrite complex computer programs, websites, and web applications that insert, update, select, and display information from databases. Develop applications for Faculty, Staff and Student information system (Banner), and web portal (Luminis and uPortal) using various technologies such as Angular, Express, Node.js, REST API, npm, Java, Groovy, SQL, PL/SQL, JQuery, Javascript, HTML, CSS, IntelliJ, VScode, SQL Developer, Jira, Bitbucket, git, subversion, and XSLT.`,
             `Coordinate the technical activities of a small project team's. Assist and mentor other employees in resolving various issues. Participate with management personnel in planning, direction, and coordinating operational and/or procedural matters to meet goals and objectives`,
@@ -19,10 +18,7 @@ let experiences = [
         name:'Self Employed', 
         location:'St. Paul, MN', 
         title:'Full Stack Software Engineer', 
-        dates: {
-            start:'2012',
-            end:'2018'
-        }, 
+        range:'2012-2018', 
         comments:[
             `Performed software/system design, development, test, deployment, and web servers administration.`,
             `Acted as Project Lead, Point of Contact (POC) for all users`,
@@ -33,10 +29,7 @@ let experiences = [
         name:'DOD Army RDAR-WSF-A', 
         location:'Picatinny Arsonal, NJ', 
         title:'Computer Scientist GS-12', 
-        dates: {
-            start:'2008',
-            end:'2012'
-        }, 
+        range:'2008-2012', 
         comments:[
             `Performed software/system design, development, test, deployment, and maintenance, often acting as Project Lead and Point of Contact.`,
             `Reviewed technical aspects of applications, designs, or proposed plans for compliance with requirements, legal, and other criteria. `,
@@ -48,10 +41,7 @@ let experiences = [
         name:'Valore Exchange, LLC', 
         location:' Buffalo, NY ', 
         title:'Chief Technology Officer', 
-        dates: {
-            start:'2003',
-            end:'2007'
-        }, 
+        range: '2003-2007', 
         comments:[
             `Migrated excel/access database to MySQL to meet growing technological needs and optimized MySQL for high speed transactional processing.`,
             `Switched from a Windows IIS PHP website to a Linux Apache – Tomcat JSP website utilizing a CVS repository.`,
@@ -60,4 +50,3 @@ let experiences = [
         ]
     }
   ];
-export {experiences}

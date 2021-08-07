@@ -4,14 +4,17 @@
   <h5>{{header2}}</h5>
 
 </header>
-<nav>
-      <ul ngbNav class="nav-tabs">
-        <li  [ngbNavItem]="link.id" *ngFor="let link of navigationLinks">
-          <a [routerLink]="link.route" [id]="link.id">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="d-flex">
+      <a class="navbar-brand"></a>
+      <ul class="nav" routerLinkActive="active">
+        <li class="nav-item" *ngFor="let link of navigationLinks">
+          <a [class.selected]="link.active" class="nav-link" [routerLink]="link.route" [id]="link.id" (click)=updateActiveLink(link.id)>
             {{link.name}}
           </a>
         </li>
       </ul>
+  </div>
 </nav>
 <router-outlet></router-outlet>
 

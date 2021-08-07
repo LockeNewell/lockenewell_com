@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ElevatorComponent } from './elevator/elevator.component';
 import { ResumeComponent } from './resume/resume.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [
@@ -14,11 +15,12 @@ import { ResumeComponent } from './resume/resume.component';
     AppRoutingModule,
     NgbModule
   ],
-  declarations: [			
+  declarations: [				
     AppComponent,
     PortfolioComponent,
     ElevatorComponent,
-    ResumeComponent
+    ResumeComponent,
+      HomeComponent
    ],
   providers: [],
   bootstrap: [AppComponent]
