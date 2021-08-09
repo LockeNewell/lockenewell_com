@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { portfolioList } from '../configs/portfolioList.config';
+import { PortfolioItem } from '../objects';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  portfolioItems: PortfolioItem[] = portfolioList;
+  portfolioItem: PortfolioItem;
+  get portfolioItemSet(): boolean { return (this.portfolioItem)?true:false; }
+
+  constructor() { 
+  }
 
   ngOnInit() {
   }

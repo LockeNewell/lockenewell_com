@@ -23,8 +23,10 @@ export interface NavigationItem {
     active: boolean;
 }
 export interface PortfolioItem {
+    id: string;
     title: string;
     link: string;
     image: string;
     description: string;
+    detail: string;
 }

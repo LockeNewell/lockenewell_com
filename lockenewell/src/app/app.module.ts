@@ -8,6 +8,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ElevatorComponent } from './elevator/elevator.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
+import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
+import { PortfolioMenuComponent } from './portfolio-menu/portfolio-menu.component';
+import { PortfolioListComponent } from './portfolio-list/portfolio-list.component';
 
 @NgModule({
   imports: [
@@ -15,12 +18,16 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     NgbModule
   ],
-  declarations: [				
+  declarations: [								
     AppComponent,
     PortfolioComponent,
     ElevatorComponent,
     ResumeComponent,
-      HomeComponent
+      HomeComponent,
+      PortfolioMenuComponent,
+      PortfolioItemComponent,
+      PortfolioMenuComponent,
+      PortfolioListComponent
    ],
   providers: [],
   bootstrap: [AppComponent]

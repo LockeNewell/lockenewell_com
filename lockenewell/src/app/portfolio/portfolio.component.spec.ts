@@ -13,7 +13,7 @@ describe('PortfolioComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ PortfolioComponent ]
     })
-    .compileComponents();
+    .compileComponents(); 
   }));
 
   beforeEach(() => {
@@ -25,4 +25,5 @@ describe('PortfolioComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
