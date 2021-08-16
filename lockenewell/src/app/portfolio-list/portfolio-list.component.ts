@@ -15,4 +15,10 @@ export class PortfolioListComponent implements OnInit {
   ngOnInit() {
   }
 
+  displaySkills(skills: string[]): string {
+    return skills.join(', ');
+  }
+  getImageUrl(path: string): string {
+    return '../../assets/' + path;
+  }
 }

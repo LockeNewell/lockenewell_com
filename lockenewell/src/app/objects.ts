@@ -25,8 +25,11 @@ export interface NavigationItem {
 export interface PortfolioItem {
     id: string;
     title: string;
+    note?: string;
     link: string;
     image: string;
     description: string;
+    skills: string[];
+    screenshots: string[];
     detail: string;
 }
