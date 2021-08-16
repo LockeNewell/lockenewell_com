@@ -5,7 +5,7 @@ import { PortfolioItem } from '../objects';
 @Component({
   selector: 'app-portfolio-menu',
   templateUrl: './portfolio-menu.component.html',
-  styleUrls: ['./portfolio-menu.component.css']
+  styleUrls: ['./portfolio-menu.component.scss']
 })
 export class PortfolioMenuComponent implements OnInit {
 
