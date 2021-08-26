@@ -33,3 +33,7 @@ export interface PortfolioItem {
     screenshots: string[];
     detail: string;
 }
+export interface toolListItem {
+    type: string;
+    list: string[];
+}

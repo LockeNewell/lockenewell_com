@@ -1,12 +1,12 @@
-<h5>Portfolio List</h5>
-<div class='card border-0 pb-3 d-flex flex-row' *ngFor="let item of portfolioItems">
-  <div class='w-25 pr-3 d-flex flex-column'>
+<h5 class="text-center">Portfolio List</h5>
+<div class='card border-0 pb-3 d-flex justify-content-around flex-column flex-md-row' *ngFor="let item of portfolioItems">
+  <div class='sidebar pr-3 d-flex'>
     <img class="img-responsive" [src]="getImageUrl(item.image)" width="100%" alt="placeholder">
   </div>
-  <div class="w-75 pl-3 d-flex flex-column">
-      <h5 class="d-flex">{{item.title}}</h5>
-      <div *ngIf="item.note">{{item.note}}</div>
-      <div>{{item.description}}</div>
-      <div>Skills:<b>{{displaySkills(item.skills)}}</b></div>
+  <div class="body d-flex flex-column">
+      <h5 class="p-0">{{item.title}}</h5>
+      <div class="p-0" *ngIf="item.note">{{item.note}}</div>
+      <div class="p-0">{{item.description}}</div>
+      <div class="p-0">Skills:<b>{{displaySkills(item.skills)}}</b></div>
   </div>
 </div>

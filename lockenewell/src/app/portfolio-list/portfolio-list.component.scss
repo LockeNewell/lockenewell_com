@@ -1,0 +1,17 @@
+
+.body {
+    width: 100%;
+}
+.sidebar {
+    width: 100%;
+}
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .body {
+        width: 75%;
+    }
+    .sidebar {
+        width: 25%;
+    }
+}
