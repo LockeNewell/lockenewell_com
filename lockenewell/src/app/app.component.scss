@@ -20,18 +20,19 @@ header h5 {
     width: 100%;
   }
   
-.navbar li {
-  float: left;
-}
-  
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.navbar li a:hover {
+.navbar{
+  li {
+    float: left;
+  }
+    
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
     display: block;
     color: white;
     text-align: center;
@@ -39,30 +40,34 @@ header h5 {
     text-decoration: none;
     background-color: #555;
   }
+}
+
 .selected {
   background-color: #555;
 }
+
 section {
     margin-block-start: 1em;
 }
+
 footer {
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
-  footer h4 {
+  h4 {
     margin-block-end: 4px;
-}
-footer div{
+  }
+  div {
     float: left;
     padding-left: 20px;
     display: block;
     color: white;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
   }
-footer div ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+}
