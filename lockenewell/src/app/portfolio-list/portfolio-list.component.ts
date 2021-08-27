@@ -10,6 +10,10 @@ import { PortfolioItem } from '../objects';
 export class PortfolioListComponent implements OnInit {
 
   portfolioItems: PortfolioItem[] = portfolioList;
+  skillFilter: string[];
+  get filteredPortfolioItems(): PortfolioItem[] {
+    return this.portfolioItems.filter(item => this.testPortfolioItem(item) );
+  }
   constructor() { }
 
   ngOnInit() {
@@ -21,4 +25,8 @@ export class PortfolioListComponent implements OnInit {
   getImageUrl(path: string): string {
     return '../../assets/' + path;
   }
+  testPortfolioItem(portfolioItem: PortfolioItem): boolean {
+    return true
+  }
+
 }
