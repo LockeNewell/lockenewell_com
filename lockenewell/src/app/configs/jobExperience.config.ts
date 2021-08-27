@@ -2,6 +2,7 @@ import { JobItem } from "../objects";
 
 export const jobExperience: JobItem[] = [
     {
+        id: 1, 
         name:'Texas A&M University (EIS)', 
         location:'College Station, TX', 
         title:'Software Application Developer 2', 
@@ -15,10 +16,11 @@ export const jobExperience: JobItem[] = [
         ]
     },
     {
+        id: 2, 
         name:'Self Employed', 
         location:'St. Paul, MN', 
         title:'Full Stack Software Engineer', 
-        range:'2012-2018', 
+        range:'2012 - Present', 
         comments:[
             `Performed software/system design, development, test, deployment, and web servers administration.`,
             `Acted as Project Lead, Point of Contact (POC) for all users`,
@@ -26,8 +28,9 @@ export const jobExperience: JobItem[] = [
         ]
     },
     {
+        id: 3, 
         name:'DOD Army RDAR-WSF-A', 
-        location:'Picatinny Arsonal, NJ', 
+        location:'Picatinny Arsenal, NJ', 
         title:'Computer Scientist GS-12', 
         range:'2008-2012', 
         comments:[
@@ -38,6 +41,7 @@ export const jobExperience: JobItem[] = [
         ]
     },
     {
+        id: 4, 
         name:'Valore Exchange, LLC', 
         location:' Buffalo, NY ', 
         title:'Chief Technology Officer', 

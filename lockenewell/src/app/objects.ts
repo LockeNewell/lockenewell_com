@@ -9,6 +9,7 @@ export interface EducationItem {
     range: string;
 }
 export interface JobItem {
+    id: number;
     name: string;
     location: string;
     title: string;
@@ -36,4 +37,10 @@ export interface PortfolioItem {
 export interface toolListItem {
     type: string;
     list: string[];
+}
+export interface skillItem {
+    id: number;
+    name: string;
+    experience: number; // in months
+    jobLink: number;
 }

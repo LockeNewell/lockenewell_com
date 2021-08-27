@@ -16,6 +16,10 @@
 </div>
 <div class="d-flex pt-3 flex-column flex-md-row-reverse">
   <div class="sidebar">
+    <section id="skills" class='p-2'>
+      <h5>Skills</h5>
+      <div class="p-1" *ngFor="let skill of skills" (click)='onClickScroll(skill.jobLink)'><ngb-progressbar [type]="this.getSkillLevel(skill.experience)" [value]="this.getSkillPercent(skill.experience)">{{skill.name}}</ngb-progressbar></div>
+    </section>
     <section id="tools" class='p-2'>
       <h5>Tools</h5>
       <div class="pt-2" *ngFor="let tool of tools">
@@ -32,15 +36,9 @@
     </section>  
   </div>
   <div class="body">
-    <section id="skills" class='p-2'>
-      <h5>Skills</h5>
-      <p>
-        {{stringListJoin(skills)}}
-      </p>
-    </section>
     <section id="experience" class='p-2'>
       <h5>Job Experience</h5>
-      <div *ngFor="let item of experiences">
+      <div *ngFor="let item of experiences" [id]='item.id'>
         <h6>{{item.title}} ({{item.range}})</h6>
         <div class='title'>{{item.name}}</div>
         <div class='location'>{{item.location}}</div>
