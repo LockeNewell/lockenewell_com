@@ -51,4 +51,50 @@ export class ResumeComponent implements OnInit {
   onClickScroll(elementId: string){
     this.viewportScroller.scrollToAnchor(elementId);
   }
+  skillTooltip(skill: skillItem): string {
+    let job = this.experiences.find( (job) => job.id === skill.jobLink );
+    let output = '';
+    if (job) {
+      output = 'I have used ' + skill.name + ' professionally for ' + this.yeasAndMonthsFromMonths(skill.experience) + '. Most recently as a ' + job.title;
+      if(job.name==='Self Employed') {
+        output = output + ' while ' + job.name;
+      }else {
+        output = output + ' at ' + job.name;
+      }
+    }
+    return output;
+  }
+  yeasAndMonthsFromMonths(monthCount: number): string { 
+    let output = '';
+    let yearOutput = '';
+    let monthOutput = '';
+    let yearCount = Math.floor(monthCount/12);
+    let remainderMonthCount = monthCount%12;
+
+    if (yearCount === 1){
+      yearOutput = yearCount + " year";
+    }
+    else if (yearCount > 1){
+      yearOutput = yearCount + " years"; 
+    }
+
+    if (remainderMonthCount === 1) {
+      monthOutput = remainderMonthCount + " month";
+    } else if (remainderMonthCount > 1) {
+      monthOutput = remainderMonthCount + " months";
+    }
+
+    if (yearOutput.length>1){
+      if (monthOutput.length>1){
+        return yearOutput + ' and ' + monthOutput
+      } else {
+        return yearOutput;
+      }
+    } else {
+      return monthOutput;
+    }
+
+
+    return output;
+  }
 }

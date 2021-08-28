@@ -18,7 +18,7 @@
   <div class="sidebar">
     <section id="skills" class='p-2'>
       <h5>Skills</h5>
-      <div class="p-1" *ngFor="let skill of skills" (click)='onClickScroll(skill.jobLink)'><ngb-progressbar [type]="this.getSkillLevel(skill.experience)" [value]="this.getSkillPercent(skill.experience)">{{skill.name}}</ngb-progressbar></div>
+      <div class="p-1" *ngFor="let skill of skills" [ngbTooltip]="skillTooltip(skill)" (click)='onClickScroll(skill.jobLink)'><ngb-progressbar [type]="this.getSkillLevel(skill.experience)" [value]="this.getSkillPercent(skill.experience)">{{skill.name}}</ngb-progressbar></div>
     </section>
     <section id="tools" class='p-2'>
       <h5>Tools</h5>

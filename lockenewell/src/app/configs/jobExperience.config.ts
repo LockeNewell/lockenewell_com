@@ -5,7 +5,7 @@ export const jobExperience: JobItem[] = [
         id: 1, 
         name:'Texas A&M University (EIS)', 
         location:'College Station, TX', 
-        title:'Software Application Developer 2', 
+        title:'Software Application Developer', 
         range:'2018 - Present', 
         comments:[
             `Write, update, maintain, test and rewrite complex computer programs, websites, and web applications that insert, update, select, and display information from databases. Develop applications for Faculty, Staff and Student information system (Banner), and web portal (Luminis and uPortal) using various technologies such as Angular, Express, Node.js, REST API, npm, Java, Groovy, SQL, PL/SQL, JQuery, Javascript, HTML, CSS, IntelliJ, VScode, SQL Developer, Jira, Bitbucket, git, subversion, and XSLT.`,
