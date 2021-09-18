@@ -4,7 +4,7 @@ export interface ContactItem {
 }
 export interface EducationItem {
     name: string;
-    location: string;
+    location?: string;
     title: string;
     range: string;
 }

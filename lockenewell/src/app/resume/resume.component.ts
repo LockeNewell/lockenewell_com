@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { contactMethods } from '../configs/contactMethods.config';
-import { skillItem } from '../objects'
+import { skillItem, EducationItem } from '../objects'
 import { jobExperience } from '../configs/jobExperience.config';
 import { educationExperience } from '../configs/educationExperience.config';
 import { skillList } from '../configs/skillList.config';
@@ -35,6 +35,17 @@ export class ResumeComponent implements OnInit {
 
   stringListJoin(list: string[]): string {
     return list.join(', ');
+  }
+  getSkillListJoin(): string {
+    let out = '';
+    skillList.forEach(skill => {
+      if(out){
+        out += ', ' + skill.name
+      } else {
+        out = skill.name
+      }
+    })
+    return out;
   }
   getSkillPercent(experience: number): number {
     return (experience>this.maxSkillExperience)? 100 : (experience/this.maxSkillExperience)*100;
@@ -96,5 +107,12 @@ export class ResumeComponent implements OnInit {
 
 
     return output;
+  }
+  getEducationLocation(item: EducationItem): string {
+    let out = item.name;
+    if (item.location) {
+      out += ", " + item.location
+    }
+    return out;
   }
 }
