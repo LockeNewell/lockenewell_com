@@ -22,6 +22,19 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Feature path
+
+Phaser game with girls
+light-mode dark-mode
+moving background for main
+skillList on jobs
+link skillList to portfolio
+toolList on jobs
+filter on portfolio
+list view of portfolio
+portfolioItem detail page
+
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
