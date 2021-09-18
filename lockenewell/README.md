@@ -24,6 +24,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Feature path
 
+cool look on homepage
+    background animated graphic
+
+fix footer
+
+
 Phaser game with girls
 light-mode dark-mode
 moving background for main
