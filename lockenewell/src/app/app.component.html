@@ -16,29 +16,19 @@
       </ul>
   </div>
 </nav>
+<main class="view-side-form">
 <router-outlet></router-outlet>
+</main>
 
-<footer class="d-flex flex-row justify-content-between flex-wrap">
-  <div class="p-2">
-    <h4>LockeNewell.com</h4>
-    &copy;{{year}} LockeNewell.com
+<footer class="d-flex flex-column">
+  <div class="p-2 d-flex flex-column">
+    <p class="text-center h4">Contact Me</p>
+    <span class="text-center" *ngFor="let contactMethod of contactMethods">
+      {{contactMethod.body}}
+    </span>
   </div>
-  <div class="p-2">
-    <h4>About Me</h4>
-    <ul>
-      <li *ngFor="let navigationLink of navigationLinks">
-        <a [routerLink]="navigationLink.route" [id]="navigationLink.id">
-          {{navigationLink.name}}
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="p-2">
-    <h4>Contact Me</h4>
-    <ul>
-      <li *ngFor="let contactMethod of contactMethods">
-        <div [class]="contactMethod.class">{{contactMethod.body}}</div>
-      </li>
-    </ul>
+  <div class="p-2 d-flex flex-column justify-content-center">
+    <p class="text-center h4">LockeNewell.com</p>
+    <p class="text-center">&copy;{{year}} LockeNewell.com all rights reserved.</p>
   </div>
 </footer>
