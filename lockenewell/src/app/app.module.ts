@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +19,9 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
+    ProgressbarModule.forRoot(),
+    CarouselModule.forRoot(),
+    TooltipModule.forRoot(),
     BrowserAnimationsModule,
   ],
   declarations: [								

@@ -1,61 +1,63 @@
-<div class="d-flex flex-column flex-md-row">
-  <div class="body">
-    <section id="name" class='p-2'>
-      <h2>Locke Newell</h2>
-      <h5>Full Stack Software Engineer</h5>
-    </section>
-  </div>
-  <div class="sidebar">
-    <section id="contact" class='p-2'>
-      <h5>Contact</h5>
-      <div *ngFor="let contactMethod of contactMethods" [class]="contactMethod.class">
-        {{contactMethod.body}}
-      </div>
-    </section>
-  </div>
-</div>
-<hr>
-<div class="d-flex pt-3 flex-column flex-md-row-reverse">
-  <div class="sidebar">
-    <section id="skills" class='p-2'>
-      <h5>Skills</h5>
-      <div class="p-1 graphicSkills" *ngFor="let skill of skills" [ngbTooltip]="skillTooltip(skill)" (click)='onClickScroll(skill.jobLink)'>
-        <ngb-progressbar [type]="this.getSkillLevel(skill.experience)" [value]="this.getSkillPercent(skill.experience)">
-          {{skill.name}}
-        </ngb-progressbar>
-      </div>
-      <div class="p-1 nonGraphicSkills skillsText">
-        {{getSkillListJoin()}}
-      </div>
-    </section>
-    <hr>
-    <section id="tools" class='p-2'>
-      <h5>Tools</h5>
-      <div class="pt-2 toolsText" *ngFor="let tool of tools">
-        <div><b>{{tool.type}}:</b> ({{stringListJoin(tool.list)}})</div>
-      </div>
-    </section>
-    <hr>
-    <section id="education" class='p-2'>
-      <h5>Education</h5>
-      <div class="pt-2" *ngFor="let item of education">
-        <div class="m-0 EducationTitle">{{item.title}}</div>
-        <div class="EducationLocation">{{getEducationLocation(item)}}</div> 
-        <div class='EducationRange'>{{item.range}}</div>
-      </div>
-    </section>  
-  </div>
-  <div class="body">
-    <section id="experience" class='p-2'>
-      <h5>Experience</h5>
-      <div *ngFor="let exp of experiences" [id]='exp.id'>
-        <div class="JobName">{{exp.title}} ({{exp.range}})</div>
-        <div class='JobLocation'>{{exp.name}}, {{exp.location}}</div>
-        <ul>
-          <li class="JobComment" *ngFor="let comment of exp.comments">{{comment}}</li>
-        </ul>
-      </div>
-    </section>
+<div class="d-flex flex-column p-3">
 
+  <div class="pb-4"><button type="button"(click)="downloadResumeAsPDF()">Download Resume As PDF</button></div>
+  <div id="resume" #resume>
+    <div  class="d-flex flex-column flex-md-row">
+      <div class="body">
+        <section id="name" class='p-2'>
+          <h2>Locke Newell</h2>
+          <h5>Full Stack Software Engineer</h5>
+        </section>
+      </div>
+      <div class="sidebar">
+        <section id="contact" class='p-2'>
+          <h5>Contact</h5>
+          <div *ngFor="let contactMethod of contactMethods" [class]="contactMethod.class">
+            {{contactMethod.body}}
+          </div>
+        </section>
+      </div>
+    </div>
+    <hr>
+    <div class="d-flex pt-3 flex-column flex-md-row-reverse">
+      <div class="sidebar">
+        <section id="skills" class='p-2'>
+          <h5>Skills</h5>
+          <div class="p-1 nonGraphicSkills skillsText">
+            {{getSkillListJoin()}}
+          </div>
+        </section>
+        <hr>
+        <section id="tools" class='p-2'>
+          <h5>Tools</h5>
+          <div class="pt-2 toolsText" *ngFor="let tool of tools">
+            <div><b>{{tool.type}}:</b> ({{stringListJoin(tool.list)}})</div>
+          </div>
+        </section>
+        <hr>
+        <section id="education" class='p-2'>
+          <h5>Education</h5>
+          <div class="pt-2" *ngFor="let item of education">
+            <div class="m-0 EducationTitle">{{item.title}}</div>
+            <div class="EducationLocation">{{getEducationLocation(item)}}</div> 
+            <div class='EducationRange'>{{item.range}}</div>
+          </div>
+        </section>  
+        <hr>
+      </div>
+      <div class="body">
+        <section id="experience" class='p-2'>
+          <h5>Experience</h5>
+          <div *ngFor="let exp of experiences" [id]='exp.id'>
+            <div class="JobName">{{exp.title}} ({{exp.range}})</div>
+            <div class='JobLocation'>{{exp.name}}, {{exp.location}}</div>
+            <ul>
+              <li class="JobComment" *ngFor="let comment of exp.comments">{{comment}}</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
   </div>
 </div>

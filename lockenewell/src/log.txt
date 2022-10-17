@@ -1,0 +1,2 @@
+npm i --save pdfmake html-to-pdfmake jspdf
+npm update tar --depth 6 

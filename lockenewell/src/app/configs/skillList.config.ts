@@ -21,6 +21,5 @@ export const skillList: skillItem[] = [
     { id: 20, name: 'C', experience: 24, jobLink: 3 },
     { id: 21, name: 'C++', experience: 24, jobLink: 3 },
     { id: 22, name: 'PHP', experience: 30, jobLink: 2 },
-    { id: 23, name: 'VB.NET', experience: 24, jobLink: 3 },
-    { id: 24, name: 'Pearl', experience: 6, jobLink: 4 }
+    { id: 23, name: 'VB.NET', experience: 24, jobLink: 3 }
 ];

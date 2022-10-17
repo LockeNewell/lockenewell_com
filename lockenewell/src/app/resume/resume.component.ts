@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+
+import jsPDF from 'jspdf';
+import * as pdfMake  from 'pdfmake/build/pdfmake';
+import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+
+var htmlToPdfmake = require( 'html-to-pdfmake');
+// import fade in animation
+import { fadeInAnimation } from '../_animations/index';
 import { contactMethods } from '../configs/contactMethods.config';
 import { skillItem, EducationItem } from '../objects'
 import { jobExperience } from '../configs/jobExperience.config';
@@ -7,6 +15,7 @@ import { skillList } from '../configs/skillList.config';
 import { toolList } from '../configs/toolList.config';
 import { ViewportScroller } from '@angular/common';
 
+(<any>pdfMake).vfs = pdfFonts.pdfMake.vfs;
 enum SkillLevel {
   MASTER = 'success',
   USER = 'info',
@@ -14,10 +23,16 @@ enum SkillLevel {
 }
 @Component({
   selector: 'app-resume',
+  // make fade in animation available to this component
+  animations: [fadeInAnimation],
+  // attach the fade in animation to the host (root) element of this component
+  host: { '[@fadeInAnimation]': '' },
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
+
+  @ViewChild('resume') resume: ElementRef;
 
   contactMethods = contactMethods;
   experiences = jobExperience;
@@ -114,5 +129,16 @@ export class ResumeComponent implements OnInit {
       out += ", " + item.location
     }
     return out;
+  }
+  public downloadResumeAsPDF(): void {
+    const doc = new jsPDF();
+   
+    const resume = this.resume.nativeElement;
+   
+    var html = htmlToPdfmake(resume.innerHTML);
+     
+    const documentDefinition = { content: html };
+    pdfMake.createPdf(documentDefinition).open(); 
+
   }
 }
