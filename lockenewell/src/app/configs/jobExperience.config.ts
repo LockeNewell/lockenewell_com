@@ -3,8 +3,21 @@ import { JobItem } from "../objects";
 export const jobExperience: JobItem[] = [
     {
         id: 1, 
+        title:'Senior Software Engineer', 
+        range:'2021 - Present', 
+        name:'Therigy (CPS)', 
+        location:'Remote', 
+        comments:[
+            `Write reusable, testable, and efficient code for performant applications that are designed to be low-latency and high-availability.`,
+            `Function as both a customer facing and technical resource on projects throughout the project lifecycle, comfortable interfacing on client calls as well as design meetings.`,
+            `Advise internal customers on project timelines for all phases of technical design projects. Recommend improvements to business processes as supported by application systems.`,
+            `Ensure implementation of projects meet security and data protection legal requirements.`
+        ]
+    },
+    {
+        id: 2, 
         title:'Software Application Developer', 
-        range:'2018 - Present', 
+        range:'2018 - 2021', 
         name:'Texas A&M University (EIS)', 
         location:'College Station, TX', 
         comments:[
@@ -14,7 +27,7 @@ export const jobExperience: JobItem[] = [
         ]
     },
     {
-        id: 2, 
+        id: 3, 
         title:'Full Stack Software Engineer', 
         range:'2012 - Present', 
         name:'Self Employed', 
@@ -25,7 +38,7 @@ export const jobExperience: JobItem[] = [
         ]
     },
     {
-        id: 3, 
+        id: 4, 
         title:'Computer Scientist GS-12', 
         range:'2008-2012', 
         name:'DOD Army RDAR-WSF-A', 
@@ -36,7 +49,7 @@ export const jobExperience: JobItem[] = [
         ]
     },
     {
-        id: 4, 
+        id: 5, 
         title:'Chief Technology Officer', 
         range: '2003-2007', 
         name:'Valore Exchange, LLC', 
