@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ElevatorComponent } from './elevator/elevator.component';
 import { ResumeComponent } from './resume/resume.component';
+import { ResumeComponentPDF } from './resume-pdf/resume-pdf.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { PortfolioMenuComponent } from './portfolio-menu/portfolio-menu.component';
@@ -29,12 +30,13 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
     PortfolioComponent,
     ElevatorComponent,
     ResumeComponent,
-      HomeComponent,
-      PortfolioMenuComponent,
-      PortfolioItemComponent,
-      PortfolioMenuComponent,
-      PortfolioListComponent
-   ],
+    ResumeComponentPDF,
+    HomeComponent,
+    PortfolioMenuComponent,
+    PortfolioItemComponent,
+    PortfolioMenuComponent,
+    PortfolioListComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,64 @@
+
+.body {
+  width: 100%;
+}
+.sidebar {
+  width: 100%;
+}
+.graphicSkills {
+  display: none;
+}
+.nonGraphicSkills {
+  display: flex;
+}
+h5 {
+  font-weight: bold;
+  font-size: 14px;
+}
+.EducationTitle {
+  font-weight: bold;
+  font-size: 10px;
+}
+.EducationLocation {
+  font-size: 10px;
+}
+.EducationRange {
+  font-size: 10px;
+}
+.JobName {
+  font-weight: bold;
+  font-size: 12px;
+}
+.JobLocation {
+  font-style: italic;
+  font-size: 12px;
+}
+.JobComment {
+  font-size: 11px;
+}
+.skillsText {
+  font-size: 10px;
+}
+.toolsText {
+  font-size: 10px;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .body {
+    width: 75%;
+  }
+  .sidebar {
+    width: 25%;
+  }
+}
+// Medium devices (tablets, 992px and up)
+@media (min-width: 992px) { 
+  .graphicSkills {
+    display: block;
+    width: 100%;
+  }
+  .nonGraphicSkills {
+    display: none;
+  }
+}
