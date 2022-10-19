@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'**', redirectTo: '/home', pathMatch: 'full' }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy', anchorScrolling: 'enabled' })],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

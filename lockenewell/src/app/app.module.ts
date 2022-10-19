@@ -4,6 +4,7 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,7 +38,7 @@ import { PortfolioListComponent } from './portfolio-list/portfolio-list.componen
     PortfolioMenuComponent,
     PortfolioListComponent
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
