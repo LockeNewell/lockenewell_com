@@ -14,7 +14,7 @@ export const portfolioList: PortfolioItem[] = [
             'AWS'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'9',
@@ -35,11 +35,11 @@ export const portfolioList: PortfolioItem[] = [
             'AWS'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'8',
-        title:'Broadcast Messages',
+        title:'Dynamic Configurations',
         note:'Therigy',
         link:'https://www.therigy.com/',
         image:'images/configurationOptions.png',
@@ -60,7 +60,7 @@ export const portfolioList: PortfolioItem[] = [
             'MySQL'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'7',
@@ -85,7 +85,7 @@ export const portfolioList: PortfolioItem[] = [
             'MySQL'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:`I was tasked with creating an interface to allow administrators to create broadcast messages in HTML, whether those administrators had advanced HTML or limited to no coding skills.  The interface I created, by combining a wysiwyg editor and a markdown HTML translate, allows administrators to flip between HTML and graphical text editor views to ensure their broadcast messages look right and reach the right users regardless of coding skill. `
     },
     {
         id:'6',
@@ -108,7 +108,7 @@ export const portfolioList: PortfolioItem[] = [
             'Oracle'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'5',
@@ -131,7 +131,7 @@ export const portfolioList: PortfolioItem[] = [
             'Oracle'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'4',
@@ -154,7 +154,7 @@ export const portfolioList: PortfolioItem[] = [
             'Oracle'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'3',
@@ -174,7 +174,7 @@ export const portfolioList: PortfolioItem[] = [
             'Oracle'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'2',
@@ -194,7 +194,7 @@ export const portfolioList: PortfolioItem[] = [
             'Oracle'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     },
     {
         id:'1',
@@ -214,6 +214,6 @@ export const portfolioList: PortfolioItem[] = [
             'Oracle'
         ],
         screenshots: [''],
-        detail:`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+        detail:''
     }
 ]
